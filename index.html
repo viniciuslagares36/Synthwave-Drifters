@@ -140,19 +140,21 @@
             <fieldset id="fs-dados" class="form-grupo">
                 <legend id="lg-dados" class="form-legend">Seus dados</legend>
 
-                <div id="campo-nome" class="form-campo">
-                    <label id="lbl-nome" class="form-label" for="nome">Nome</label>
-                    <input id="nome" class="form-input" type="text" name="nome" required />
-                </div>
+                <div class="form-row">
+                    <div id="campo-nome" class="form-campo">
+                        <label id="lbl-nome" class="form-label" for="nome">Nome</label>
+                        <input id="nome" class="form-input" type="text" name="nome" required />
+                    </div>
 
-                <div id="campo-assunto" class="form-campo">
-                 <br><label id="lbl-assunto" class="form-label" for="assunto">Assunto</label>
-                    <select id="assunto" class="form-select" name="assunto">
-                        <option id="opt-duvida" value="duvida">Dúvida</option>
-                        <option id="opt-parceria" value="parceria">Parceria</option>
-                        <option id="opt-outro" value="outro">Outro</option>
-                    </select>
-                </div><br> 
+                    <div id="campo-assunto" class="form-campo">
+                        <label id="lbl-assunto" class="form-label" for="assunto">Assunto</label>
+                        <select id="assunto" class="form-select" name="assunto">
+                            <option id="opt-duvida" value="duvida">Dúvida</option>
+                            <option id="opt-parceria" value="parceria">Parceria</option>
+                            <option id="opt-outro" value="outro">Outro</option>
+                        </select>
+                    </div>
+                </div>
                 <div id="campo-msg" class="form-campo">
                     <label id="lbl-mensagem" class="form-label" for="mensagem">Mensagem</label>
                     <textarea id="mensagem" class="form-textarea" name="mensagem" rows="4"></textarea>
