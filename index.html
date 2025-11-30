@@ -7,7 +7,7 @@
     <meta name="description"
         content="Entre no mundo retrofuturista onde estilo e velocidade se encontram. Descubra os carros mais icônicos da era synthwave.">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="logo.png">
+    <link rel="icon" href="logo">
 
 </head>
 
@@ -17,7 +17,9 @@
         <div class="container">
             <div class="nav-content">
                 <img src="imagens/logo.png" alt="Synthwave Drifters Logo" class="logo">
-
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu de navegação">
+                    <span>☰</span>
+                </button>
                 <div class="nav-links" id="navLinks">
                     <a href="#home" class="nav-link">Home</a>
                     <a href="#carros" class="nav-link">Carros</a>
@@ -180,6 +182,26 @@
             <p>© 2025 Synthwave Drifters. Todos os Direitos Reservados.</p>
         </div>
     </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+
+        if (mobileMenuBtn) {
+            mobileMenuBtn.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+
+            // Fechar menu ao clicar em um link
+            const navItems = navLinks.querySelectorAll('.nav-link');
+            navItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    navLinks.classList.remove('active');
+                });
+            });
+        }
+    </script>
 
 </body>
 
